@@ -78,7 +78,7 @@ libresolv.9.tbd
 NSLocationWhenInUseUsageDescription
 NSLocationAlwaysAndWhenInUseUsageDeion
 ```
-## 4 SDK接入流程
+## 4 接入代码
 ### 4.1 SDK初始化
 1. 初始化方法
 ```obj-c
