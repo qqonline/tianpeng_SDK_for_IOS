@@ -1,7 +1,4 @@
-# tianpeng_SDK_for_IOS
-天鹏ios_sdk
-
-# TPCore
+# 天鹏广告IOS SDK接入文档
 
 ## 1.1 概述
 
