@@ -1,20 +1,20 @@
 # 天鹏广告IOS SDK接入文档
 
-## 0 概述
+## 1 概述
 
 尊敬的开发者朋友，欢迎您使用天鹏广告sdk平台。通过本文档，您可以轻松的在几分钟之内完成广告的集成过程。
 开发工具： Xcode 8 及以上版本
 操作系统： iOS 8.0 及以上版本
 
-## 1 Demo以及sdk下载
+## 2 Demo以及sdk下载
   
   [Demo下载地址](https://github.com/tianpengco/xxx)
   
   [sdk下载地址](https://github.com/tianpengco/tianpeng_SDK_for_Android/blob/master/xxx)
 
 
-## 2 SDK接入流程
-## 2.1 导入SDK
+## 3 SDK接入流程
+### 3.1 导入SDK
 
 ### 必须导入的
 * `TPCore.framework` 和 `TPCore.bundle`
@@ -30,7 +30,7 @@
 * `有道`
 
 
-## 2.2 环境配置
+### 3.2 环境配置
 
 1. 依赖库添加
 ```obj-c
@@ -78,8 +78,8 @@ libresolv.9.tbd
 NSLocationWhenInUseUsageDescription
 NSLocationAlwaysAndWhenInUseUsageDeion
 ```
-## 3 SDK接入流程
-### 3.1 SDK初始化
+## 4 SDK接入流程
+### 4.1 SDK初始化
 1. 初始化方法
 ```obj-c
 #import <TPCore.h>
@@ -109,7 +109,7 @@ TPConfiguration *configure = [[TPConfiguration alloc] initWithAppId:@"APP_ID"];
 // 查看工程中已经注册有效的平台 (可以拉取广告)
 [TPCoreKit registedMediatedPlatforms]
 ```
-### 3.2 开屏广告
+### 4.2 开屏广告
 
 1. 请求示例
 ```obj-c
@@ -132,7 +132,7 @@ bottomView.frame = CGRectMake(0, 0, kTPScreenWidth, kTPScreenHeight * 0.25);
 [self.splashAd loadAndShowWithBottomView:bottomView];
 ```
 
-### 3.3 横幅广告
+### 4.3 横幅广告
 
 ### banner高度不能低于50, 一般宽高比为320 * 50
 
@@ -154,7 +154,7 @@ if (!self.bannerView) {
 [self.bannerView loadAndShow];
 ```
 
-### 3.4 插屏广告
+### 4.4 插屏广告
 
 1. 初始化并预加载数据
 ```obj-c
@@ -172,7 +172,7 @@ self.interstitialAd.delegate = self;
 }
 ```
 
-### 3.5 信息流广告
+### 4.5 信息流广告
 
 1. 初始化 (一个请求对象可以多次使用, 所以请采用懒加载)
 ```obj-c
@@ -231,13 +231,13 @@ if (_nativeAd) {
 }
 ```
 
-## 4. 常见问题
+## 5. 常见问题
 
 get ad ﬁled  广告未放量，请联系商务</br>
 
 platams is empty  广告渠道未接入，请联系商务
 
-## 5 Author
+## 6 Author
 
 杭州天鹏网络技术有限公司, qiuchanghong@tianpengnet.com
 
