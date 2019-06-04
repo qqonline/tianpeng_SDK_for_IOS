@@ -3,11 +3,15 @@
 ## 1.1 概述
 
 尊敬的开发者朋友，欢迎您使用天鹏广告sdk平台。通过本文档，您可以轻松的在几分钟之内完成广告的集成过程。
-
-
 开发工具： Xcode 8 及以上版本
-
 操作系统： iOS 8.0 及以上版本
+
+## 1.2 Demo以及sdk下载
+  
+  [Demo下载地址](https://github.com/tianpengco/xxx)
+  
+  [sdk下载地址](https://github.com/tianpengco/tianpeng_SDK_for_Android/blob/master/xxx)
+
 
 ## 2.1 导入SDK
 
