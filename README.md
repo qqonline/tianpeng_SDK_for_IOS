@@ -8,9 +8,7 @@
 
 ## 2 Demo以及sdk下载
   
-  [Demo下载地址](https://github.com/tianpengco/xxx)
-  
-  [sdk下载地址](https://github.com/tianpengco/tianpeng_SDK_for_Android/blob/master/xxx)
+  [链接](https://gitlab.tianpengnet.cn/client/ios/tpadsdk)
 
 
 ## 3 SDK接入流程
