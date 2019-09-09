@@ -94,7 +94,7 @@ TPConfiguration *configure = [[TPConfiguration alloc] initWithAppId:@"APP_ID"];
 [[TPCore sharedInstance] initializeSDKWithConfiguration:configure completion:nil];
 ```
 
-2. 开启定位服务, 更加精准的投放广告
+3. 开启定位服务, 更加精准的投放广告
 ```obj-c
 [TPCoreKit setLocationOn:YES];
 ```
@@ -231,9 +231,9 @@ if (_nativeAd) {
 
 ## 5. 常见问题
 
- 广告未放量，请联系商务</br>
-
- 广告渠道未接入，请联系商务
+ 1、广告未放量，请联系商务</br>
+ 2、如果是测试广告位未获取到广告，则检查包名是否正确 </br>
+ 3、广告渠道未接入，请联系商务
 
 ## 6. 版权
 
