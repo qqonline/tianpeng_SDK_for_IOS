@@ -229,6 +229,29 @@ if (_nativeAd) {
 }
 ```
 
+## 4.6 激励视频
+1. 初始化并 加载数据
+```obj-c
+#import <TPCore/TPRewardedVideo.h>
+// 1. 初始化
+self.video=[[TPRewardedVideo alloc]init];
+// 2. 设置代理回调
+self.video.delegate=self;
+// 3. 加载数据  
+[self.video loadAd];
+```
+
+2. 弹出激励视频
+```obj-c
+/**
+激励视频数据下载成功回调，已经下载过的视频会直接回调(Video)
+*/
+-(void)tp_rewardedVideoAdVideoDidLoad:(TPRewardedVideo *)rewardedVideoAd{
+  NSLog(@"%s", __FUNCTION__);
+   [self.video showAdFromRootViewController:self.navigationController];
+}
+```
+
 ## 5. 常见问题
 
  1、广告未放量，请联系商务</br>
